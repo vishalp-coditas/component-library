@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^19.2.8",
     "@angular/platform-browser-dynamic": "^19.2.8",
     "@angular/router": "^19.2.8",
+    "postcss": "^8.5.3",
     "rxjs": "~7.5.0",
+    "tailwind-ds": "file:dist/tailwind-ds/tailwind-ds-0.0.1.tgz",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
