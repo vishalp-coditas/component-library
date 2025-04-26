@@ -98,6 +98,39 @@
           }
         }
       }
+    },
+    "tailwind-DS": {
+      "projectType": "library",
+      "root": "projects/tailwind-ds",
+      "sourceRoot": "projects/tailwind-ds/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tailwind-ds/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tailwind-ds/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tailwind-ds/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/tailwind-ds/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
